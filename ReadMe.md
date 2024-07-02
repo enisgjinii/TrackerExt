@@ -1,4 +1,3 @@
-```markdown
 # TrackerExt
 
 TrackerExt is a browser extension project created to help users track and manage their online activities. This project currently lacks any description, so the provided README will cover basic aspects such as installation, usage, and contribution guidelines.
@@ -62,9 +61,5 @@ This project currently does not specify a license. If you are contributing or us
 ## Authors and Acknowledgments
 TrackerExt is maintained by `enisgjinii`. Contributions from other users are also acknowledged.
 
----
-
 This README provides a structure to present crucial information for the repository visitors. It follows the best practices for crafting a good README, making it easier for new users and contributors to navigate the project [citation:4][citation:8][citation:9].
-```
-
 This README contains an introduction, installation instructions, usage guidelines, contributing instructions, license information, and acknowledgments, all formatted neatly following best practices [citation:1][citation:2][citation:3][citation:5][citation:6][citation:7][citation:10].  
