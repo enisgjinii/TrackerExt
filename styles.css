@@ -1,128 +1,76 @@
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --background-color: #ecf0f1;
-    --text-color: #34495e;
-    --card-background: #ffffff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'General Sans', sans-serif;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
     width: 400px;
-    height: 600px;
-    overflow-y: auto;
-}
-
-.dashboard {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: white;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-h1 {
-    font-size: 24px;
-    font-weight: 300;
+h1,
+h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
 }
 
-h1 i {
-    margin-right: 10px;
-}
-
-main {
-    flex-grow: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.activity-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
-}
-
-/* .activity-item {
-    background-color: var(--card-background);
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.activity-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-} */
-
-.url {
-    font-weight: bold;
-    color: var(--secondary-color);
+.site-item {
     margin-bottom: 10px;
-    font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.stats {
-    font-size: 12px;
-    color: var(--text-color);
-}
-
-footer {
-    padding: 20px;
-    text-align: center;
-}
-
-.btn-export {
-    background-color: var(--secondary-color);
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #3498db;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-.btn-export:hover {
+button:hover {
     background-color: #2980b9;
 }
 
-.btn-export i {
-    margin-right: 5px;
+#summary {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #2c3e50;
 }
 
-/* Scrollbar Styles */
-::-webkit-scrollbar {
-    width: 8px;
+.bar {
+    background-color: #2ecc71;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: width 0.5s ease-in-out;
 }
 
-::-webkit-scrollbar-track {
-    background: var(--background-color);
+input[type="text"],
+input[type="number"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
 }
 
-::-webkit-scrollbar-thumb {
-    background: var(--secondary-color);
-    border-radius: 4px;
+#categoryList div,
+#limitList div,
+#productiveDomainList div {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #ecf0f1;
+    border-radius: 3px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #2980b9;
+#product {
+    display: none;
 }
